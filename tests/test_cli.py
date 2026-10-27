@@ -36,7 +36,13 @@ def test_error_de_sintaxis_retorna_2():
 
 
 def test_faltan_argumentos_retorna_2():
-    assert er_afd("a").returncode == 2
+    resultado = er_afd("a")
+    assert resultado.returncode == 2
+    assert "faltan argumentos obligatorios: cadena" in resultado.stderr
+
+
+def test_opcion_sin_valor_en_espanol():
+    assert "opción --dot: falta su valor" in er_afd("a", "a", "--dot").stderr
 
 
 def test_salida_completa_en_el_orden_del_enunciado():

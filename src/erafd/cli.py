@@ -23,8 +23,18 @@ class _Formato(argparse.RawDescriptionHelpFormatter):
         return super().add_usage(usage, actions, groups, prefix or "uso: ")
 
 
+_TRADUCCIONES = {
+    "the following arguments are required": "faltan argumentos obligatorios",
+    "unrecognized arguments": "argumentos no reconocidos",
+    "expected one argument": "falta su valor",
+    "argument ": "opción ",
+}
+
+
 class _Parser(argparse.ArgumentParser):
     def error(self, message: str) -> None:  # type: ignore[override]
+        for original, traduccion in _TRADUCCIONES.items():
+            message = message.replace(original, traduccion)
         self.print_usage(sys.stderr)
         self.exit(ERROR, "%s: error: argumentos inválidos (%s)\n" % (self.prog, message))
 
