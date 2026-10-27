@@ -67,8 +67,8 @@ Q1|b|Q2
 Cadena aceptada
 ```
 
-Si en un paso no existe transición, el recorrido muestra `Qi|c|∅` y la
-cadena se rechaza.
+Si en un paso no existe transición, el recorrido muestra `Qi|c|{}` (conjunto
+vacío) y la cadena se rechaza.
 
 ## Sintaxis de las expresiones regulares
 

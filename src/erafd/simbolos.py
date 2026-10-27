@@ -10,7 +10,9 @@ from typing import FrozenSet, Iterable, List
 Caracteres = FrozenSet[int]
 
 EPSILON = "ε"
-VACIO = "∅"
+# Destino de un paso sin transición: el conjunto vacío. Se escribe {} y no
+# con el carácter ∅, que no existe en las fuentes de muchas terminales.
+VACIO = "{}"
 
 # El universo de símbolos es el código ASCII (0-127).
 UNIVERSO: Caracteres = frozenset(range(128))

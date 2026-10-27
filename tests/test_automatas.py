@@ -110,7 +110,7 @@ def test_recorrido_aceptado():
 def test_recorrido_sin_transicion_se_detiene():
     _, _, afd = convertir("ab")
     pasos, aceptada = simular(afd, "acb")
-    assert lineas_recorrido(pasos, aceptada) == ["Q0|a|Q1", "Q1|c|∅", "Cadena rechazada"]
+    assert lineas_recorrido(pasos, aceptada) == ["Q0|a|Q1", "Q1|c|{}", "Cadena rechazada"]
 
 
 def test_cadena_vacia():
