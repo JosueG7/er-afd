@@ -11,5 +11,7 @@ __pycache__/
 # Diagramas exportados con --dot fuera de build/
 *.dot
 
-# Enunciado del curso (no forma parte del código fuente)
+# Material de trabajo local (no forma parte del entregable)
 /ER-AFD proy - alf.pdf
+/PLAN.md
+/_trabajo/

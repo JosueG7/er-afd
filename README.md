@@ -117,7 +117,8 @@ tools/          informe de métricas
 doc/            reporte, casos de prueba y manual de usuario (PDF)
 ```
 
-Las decisiones de diseño y su justificación están en [PLAN.md](PLAN.md).
+Los algoritmos y las decisiones de diseño se explican en el reporte técnico
+de la carpeta [doc](doc).
 
 ## Referencias
 
