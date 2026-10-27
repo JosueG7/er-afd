@@ -1,0 +1,2 @@
+# Solo para pruebas; el programa no tiene dependencias en tiempo de ejecución.
+pytest>=7

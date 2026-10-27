@@ -1,0 +1,5 @@
+# Finales de línea Unix en el repositorio: el proyecto se ejecuta en Linux
+# y make exige que el Makefile no tenga CRLF.
+* text=auto eol=lf
+*.pdf binary
+*.png binary

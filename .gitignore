@@ -1,0 +1,15 @@
+# Generados por make
+build/
+bin/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Diagramas exportados con --dot fuera de build/
+*.dot
+
+# Enunciado del curso (no forma parte del código fuente)
+/ER-AFD proy - alf.pdf
