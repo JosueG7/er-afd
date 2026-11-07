@@ -1,0 +1,17 @@
+# Generados por make
+build/
+bin/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Diagramas exportados con --dot fuera de build/
+*.dot
+
+# Material de trabajo local (no forma parte del entregable)
+/ER-AFD proy - alf.pdf
+/PLAN.md
+/_trabajo/
